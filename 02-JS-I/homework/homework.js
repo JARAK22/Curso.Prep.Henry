@@ -71,7 +71,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-
+  if (str1.length === str2.length) {
+    return true
+  }
+    return false
 }
 
 function menosQueNoventa(num) {
@@ -186,8 +189,9 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var nombres = nombre + apellido;
-  return nombres;
+  var espacio = ' '
+  completo = nombre + espacio + apellido;
+  return completo;
 }
 
 function obtenerSaludo(nombre) {
@@ -219,7 +223,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  var triangulo = base * altura;
+  var triangulo = base * altura / 2;
   return triangulo;
 
 }
@@ -229,7 +233,9 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var dolar = 1.20;
+  var resultado = euro * dolar;
+  return resultado
 }
 
 
@@ -239,7 +245,10 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+    return 'Es vocal';
+  }
+  return 'Dato incorrecto';
 }
 
 
